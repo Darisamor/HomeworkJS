@@ -3,14 +3,13 @@ alert("Please use console!")
 console.log("Prototype style:")
 
 function Robot() {
-        this.work = () => console.log("I'm Robot - I'm just working here...")
+    this.work = () => console.log("I'm Robot - I'm just working here...")
 }
 
 function CoffeRobot() {
     // Robot.call(this);
     this.__proto__ = Robot;
-       this.work = () => console.log("I'm CoffeRobot - I make taste coffe!")
-    
+    this.work = () => console.log("I'm CoffeRobot - I make taste coffe!")
 }
 
 function RobotDancer() {
