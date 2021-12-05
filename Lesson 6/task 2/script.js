@@ -7,13 +7,11 @@ function Robot() {
 }
 
 function CoffeRobot() {
-    // Robot.call(this);
     this.__proto__ = Robot;
     this.work = () => console.log("I'm CoffeRobot - I make taste coffe!")
 }
 
 function RobotDancer() {
-    // Robot.call(this);
     this.__proto__ = Robot;
     this.work = () => console.log("I'm RobotDancer - I can dance!")
 }
